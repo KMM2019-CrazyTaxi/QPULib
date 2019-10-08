@@ -3,7 +3,7 @@ ROOT = Lib
 
 # Compiler and default flags
 CXX = clang++
-CXX_FLAGS = -Wconversion -std=c++0x -I $(ROOT) -DQPU_MODE
+CXX_FLAGS = -Wconversion -Wsign-conversion -std=c++0x -I $(ROOT) -DQPU_MODE
 
 # Object directory
 OBJ_DIR := obj-qpu
