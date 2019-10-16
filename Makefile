@@ -3,7 +3,7 @@ ROOT = Lib
 
 # Compiler and default flags
 CXX = clang++
-CXX_FLAGS = -Wconversion -Wsign-conversion -std=c++0x -I $(ROOT) -DQPU_MODE
+CXX_FLAGS = -std=c++17 -I $(ROOT) -DQPU_MODE
 
 # Object directory
 OBJ_DIR := obj-qpu
@@ -67,3 +67,4 @@ clean:
 	rm -rf obj obj-debug obj-qpu obj-debug-qpu
 	rm -f Tri GCD Print MultiTri AutoTest OET Hello ReqRecv Rot3D ID *.o
 	rm -f HeatMap	
+  rm -f qpulib.a
