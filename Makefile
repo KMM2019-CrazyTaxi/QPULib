@@ -6,9 +6,9 @@ CXX = clang++
 CXX_FLAGS = -std=c++17 -I $(ROOT) 
 
 ifeq ($(EMU), 1)
-	CCX_FLAGS += -DEMULATION_MODE
+	CXX_FLAGS += -DEMULATION_MODE
 else
-	CCX_FLAGS += -DQPU_MODE
+	CXX_FLAGS += -DQPU_MODE
 endif
 
 
